@@ -1,8 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
-  // basePath: "/",
-  // assetPrefix: "/website/",
+  trailingSlash: true,
+  basePath: "/website",
+  assetPrefix: "/website/",
+  reactStrictMode: true,
+  crossOrigin: 'anonymous',
   eslint: {
     ignoreDuringBuilds: true,
   },
