@@ -61,6 +61,21 @@
       gap: 10px;
     }
 
+    .local {
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+    }
+
+    .local-desc {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        margin-left: 10px;
+        padding-left: 10px;
+        border-left: 2px dotted #aaa;
+    }
+
     #event-date, #event-address {
       border-right: 1px dotted #aaa;
     }
@@ -157,17 +172,26 @@
     <div id="content" :html="$page.content()" lang="$page.custom.get('locale')"></div>
   </div>
   <div>
-  </div>
     <h2>Localização</h2>
-    <div>
-    <a class="address"
-      :text="$page.custom.get('address')"
-      data-latitude="$page.custom.get('latitude')"
-      data-longitude="$page.custom.get('longitude')"
-      data-gmaps="$page.custom.get('gmaps')"
-    ></a>
+    <div class="local">
+        <div id="map"></div>
+            <div class="local-desc">
+            <div>
+                Local:
+                <a class="address"
+                  :text="$page.custom.get('address')"
+                  data-latitude="$page.custom.get('latitude')"
+                  data-longitude="$page.custom.get('longitude')"
+                  data-gmaps="$page.custom.get('gmaps')"
+                ></a>
+            </div>
+            <div>
+                Dia:
+                <a :text="$page.custom.get('when')"></a>
+            </div>
+        </div>
     </div>
-    <div id="map"></div>
+  </div>
   <script>
     const address = document.querySelectorAll('.address');
     const longitude = address[0].dataset.longitude;
