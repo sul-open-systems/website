@@ -9,6 +9,7 @@ Site {
         "leaflet.js.map",
         "images/marker-icon-2x.png",
         "images/marker-shadow.png",
+        "images/map-marker.svg",
         "images/arara.svg",
         "android-chrome-192x192.png",
         "android-chrome-512x512.png",

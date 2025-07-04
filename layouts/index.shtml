@@ -80,14 +80,14 @@
   <script>
     var map = L.map('map').setView([-24, -52], 5);
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 10,
+        maxZoom: 20,
         attributionControl: false,
         }
         ).addTo(map);
 
         var ZeroIcon = L.icon({
         iconUrl:
-          "images/arara.svg",
+          "images/map-marker.svg",
         iconSize: [46, 46],
       });
     map.attributionControl.setPrefix(false);
