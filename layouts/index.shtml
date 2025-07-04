@@ -87,7 +87,7 @@
 
         var ZeroIcon = L.icon({
         iconUrl:
-          "images/map-marker.svg",
+          "images/arara.svg",
         iconSize: [46, 46],
       });
     map.attributionControl.setPrefix(false);
