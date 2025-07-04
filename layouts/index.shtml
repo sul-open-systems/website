@@ -78,9 +78,9 @@
     <a href="$site.page('contact').link()">Entre em contato</a>
   </footer>
   <script>
-    var map = L.map('map').setView([-24, -52], 5);
+    var map = L.map('map').setView([-25, -51], 6);
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 20,
+        maxZoom: 18,
         attributionControl: false,
         }
         ).addTo(map);
@@ -88,7 +88,7 @@
         var ZeroIcon = L.icon({
         iconUrl:
           "images/arara.svg",
-        iconSize: [46, 46],
+        iconSize: [40, 40],
       });
     map.attributionControl.setPrefix(false);
 
