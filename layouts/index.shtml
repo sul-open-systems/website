@@ -1,7 +1,102 @@
 <extend template="base.shtml">
 <head id="head">
+  <style>
+    .cities {
+      display: flex;
+      flex-direction: row;
+      gap: 25px;
+    }
+
+    #map {
+      width: 100%;
+      aspect-ratio: 3 / 1;
+      view-transition-name: header;
+    }
+
+    h2 {
+      border-bottom: 2px solid;
+      padding: 5px 0;
+    }
+    .cities > a {
+      display:block;
+      background-color: #282828;
+      padding: 10px;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    .cities > a:hover {
+      background-color: #282828;
+    }
+
+    .cities {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    footer {
+      text-align:right;
+    }
+
+    @view-transition {
+      navigation: auto;
+    }
+
+    img {
+      display: block;
+      margin: auto;
+      width: 30%;
+    }
+  </style>
+  <link rel="stylesheet" href="$site.asset('leaflet.css').link()">
+  <script src="$site.asset('leaflet.js').link()"></script>
+  <noscript>
+    <style>
+      #map {
+        display: none;
+      }
+    </style>
+  </noscript>
 </head>
 <body id="body">
-  <h1 :text="$page.title"></h1>
   <div :html="$page.content()"></div>
+  <div id="map"></div>
+  <div :loop="$site.pages('editions')">
+    <h2 :text="$loop.it.title"></h2>
+    <div class="cities" :loop="$loop.it.subpagesAlphabetic()">
+      <a
+        href="$loop.it.link()"
+        data-latitude="$loop.it.custom.get('latitude')"
+        data-longitude="$loop.it.custom.get('longitude')"
+        :text="$loop.it.title"
+      ></a>
+    </div>
+  </div>
+  <footer>
+    Dúvidas e/ou sugestões?
+    <a href="$site.page('contact').link()">Entre em contato</a>
+  </footer>
+  <script>
+    var map = L.map('map').setView([-24, -52], 5);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 10,
+        attributionControl: false,
+        }
+        ).addTo(map);
+
+        var ZeroIcon = L.icon({
+        iconUrl:
+          "images/arara.svg",
+        iconSize: [46, 46],
+      });
+    map.attributionControl.setPrefix(false);
+
+    const locations = document.querySelectorAll('.cities > a');
+    for (let idx = locations.length - 1; idx >=0; idx -= 1) {
+      const e = locations[idx];
+      let marker = L.marker([e.dataset.longitude, e.dataset.latitude] ,{ icon: ZeroIcon }).addTo(map);
+      marker.bindPopup(e.outerHTML);
+    }
+  </script>
 </body>

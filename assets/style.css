@@ -36,7 +36,7 @@ body {
 .site-title {
     font-size: 2.5em;
     margin-bottom: 10px;
-    /* text-align: center; */
+    text-align: center;
 }
 
 nav {
@@ -49,7 +49,6 @@ nav {
 
 .block {
     border: 1px dotted #928374;
-    /* Gruvbox Gray */
     padding: 5px 15px;
     margin: 0 10px;
     text-align: center;
@@ -84,7 +83,6 @@ footer {
 footer hr {
     width: 100%;
     border-color: #928374;
-    /* Gruvbox Gray */
     border-style: solid;
     border-width: 1px 0 0 0;
 }

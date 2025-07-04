@@ -7,7 +7,6 @@ Site {
     .static_assets = [
         "Temml.woff2",
         "leaflet.js.map",
-        "images/sos-logo.png",
         "images/marker-icon-2x.png",
         "images/marker-shadow.png",
         "images/arara.svg",

@@ -1,9 +1,8 @@
 ---
-.title = "O evento e suas inspirações",
+.title = "Edições",
 .date = @date("1990-01-01T00:00:00"),
 .author = "Pablo Hugen",
-.layout = "page.shtml",
+.layout = "index.shtml",
 .draft = false,
----
+--- 
 
-TODO
