@@ -1,0 +1,37 @@
+:root {
+    --light-yellow: #fabd2f;
+    --dark-yellow: #d79921;
+    --blue: #83a598;
+    --cyan: #8ec07c;
+    --light-red: #fb4934;
+    --dark-red: #cc241d;
+    --comment-gray: #928374;
+    --magenta: #d3869b;
+}
+
+pre {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 10px 5px;
+}
+
+code.ziggy {
+    color: var(--cyan);
+}
+
+code.ziggy .keyword,
+code.ziggy .type {
+    color: var(--light-yellow);
+}
+
+code.ziggy .string {
+    color: var(--dark-yellow);
+}
+
+code.ziggy .numeric.constant {
+    color: var(--magenta);
+}
+
+code.ziggy .function {
+    color: var(--blue);
+}

@@ -1,0 +1,15 @@
+---
+.title = "SOS",
+.date = @date("2025-07-03T00:00:00"),
+.author = "Pablo Hugen",
+.layout = "index.shtml",
+.draft = false,
+---
+
+[]($image.asset('logo.png'))
+
+A Sul Open Systems é um evento de tecnologia que promove o conhecimento, a
+colaboração e a troca de experiências entre profissionais da área de tecnologia,
+com foco em *software livre, de código aberto e minimalista*.
+
+[**Saiba mais sobre o evento e suas inspirações**](/about/)

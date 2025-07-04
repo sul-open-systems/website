@@ -1,0 +1,18 @@
+---
+.title = "SOS 2025",
+.date = @date("2025-08-02T09:00:00"),
+.author = "Pablo Hugen",
+.layout = "event.shtml",
+// You **MUST** increase 'version' if you edit the date, the duration or the
+// address of this event.
+.custom = {
+  "version": 0,
+  "duration": 8,
+  "address": "Acic - R. Pernambuco, 1800 - 2º Andar - Centro, Cascavel - PR, 85810-021",
+  "longitude": "-24.951917",
+  "latitude": "-53.478222"
+},
+.draft = true,
+---
+
+Description goes here (how to RSVP, etc).
