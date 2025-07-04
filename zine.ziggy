@@ -5,7 +5,7 @@ Site {
     .layouts_dir_path = "layouts",
     .assets_dir_path = "assets",
     .static_assets = [
-        "Temml.woff2",
+        "BerkeleyMono-Regular.ttf",
         "leaflet.js.map",
         "images/marker-icon-2x.png",
         "images/marker-shadow.png",

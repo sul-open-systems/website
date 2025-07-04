@@ -1,10 +1,16 @@
+@font-face {
+  font-family: 'Berkeley';
+  src: url('/BerkeleyMono-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5 {
     color: #8ec07c;
-    font-family: "Verdana", sans-serif;
 }
 
 b,
@@ -18,7 +24,7 @@ a {
 
 html {
     color: #ebdbb2;
-    font-family: "Georgia", serif;
+    font-family: 'Berkeley';
     font-size: 1.2em;
     display: flex;
     flex-direction: row;
