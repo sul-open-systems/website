@@ -92,3 +92,8 @@ footer hr {
     border-style: solid;
     border-width: 1px 0 0 0;
 }
+
+#map {
+  filter: invert(100%) hue-rotate(190deg) ;
+}
+
