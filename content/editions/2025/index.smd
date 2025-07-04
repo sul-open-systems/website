@@ -7,7 +7,9 @@
   "locale": "pt-BR",
   "timezone": "America/Sao_Paulo",
   "longitude": "-24.951917",
-  "latitude": "-53.478222"
+  "latitude": "-53.478222",
+  "address": "Acic - R. Pernambuco, 1800 - 2º Andar - Centro, Cascavel - PR, 85810-021",
+  "gmaps": "https://maps.app.goo.gl/rM6RRYnKzdMomMY49"
 }
 ---
 

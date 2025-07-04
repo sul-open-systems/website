@@ -19,6 +19,12 @@
       margin: 0 5px;
     }
 
+    #map {
+      width: 100%;
+      aspect-ratio: 3 / 1;
+      view-transition-name: header;
+    }
+
     #banner {
       view-transition-name: header;
       object-position: 50% 50%;
@@ -42,7 +48,7 @@
       align-items: center;
       justify-content: center;
     }
-    
+
     #event-details > dd {
       grid-column: 2;
       margin-left: 0;
@@ -54,11 +60,11 @@
       justify-content: space-around;
       gap: 10px;
     }
- 
+
     #event-date, #event-address {
       border-right: 1px dotted #aaa;
     }
- 
+
     #event-date {
       border-bottom: 1px solid white;
     }
@@ -106,11 +112,11 @@
       text-align:center;
       flex-grow: 1;
     }
-    
+
     #event-buttons > a:hover {
       background-color: #888833;
     }
-    
+
     form {
       display:flex;
       justify-content:center;
@@ -120,7 +126,18 @@
     @view-transition {
       navigation: auto;
     }
+
   </style>
+  <link rel="stylesheet" href="$site.asset('leaflet.css').link()">
+  <script src="$site.asset('leaflet.js').link()"></script>
+  <noscript>
+    <style>
+      #map {
+        display: none;
+      }
+    </style>
+  </noscript>
+
 </head>
 <body id="body">
   <hgroup>
@@ -139,4 +156,39 @@
     <h2 id="title">Programação</h2>
     <div id="content" :html="$page.content()" lang="$page.custom.get('locale')"></div>
   </div>
+  <div>
+  </div>
+    <h2>Localização</h2>
+    <div>
+    <a class="address"
+      :text="$page.custom.get('address')"
+      data-latitude="$page.custom.get('latitude')"
+      data-longitude="$page.custom.get('longitude')"
+      data-gmaps="$page.custom.get('gmaps')"
+    ></a>
+    </div>
+    <div id="map"></div>
+  <script>
+    const address = document.querySelectorAll('.address');
+    const longitude = address[0].dataset.longitude;
+    const latitude = address[0].dataset.latitude;
+    const gmaps = address[0].dataset.gmaps;
+    var map = L.map('map').setView([longitude, latitude], 18);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 20,
+        attributionControl: false,
+        }
+        ).addTo(map);
+
+        var ZeroIcon = L.icon({
+        iconUrl: "/images/map-marker.svg",
+        iconSize: [46, 46],
+      });
+    map.attributionControl.setPrefix(false);
+    const marker = L.marker([longitude, latitude] ,{ icon: ZeroIcon }).addTo(map);
+
+    marker.bindPopup(() =>{
+        window.location.replace(gmaps);
+    });
+  </script>
 </body>
