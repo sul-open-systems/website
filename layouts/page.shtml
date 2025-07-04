@@ -2,6 +2,10 @@
 <head id="head">
 </head>
 <body id="body">
-  <h1 :text="$page.title"></h1>
-  <div :html="$page.content()"></div>
+    <h3>
+        <a href="/" :text="$page.parentSection().title"></a>
+        <span style="font-weight: 100;">></span>
+        <span :text="$page.title"></span>
+    </h3>
+    <div :html="$page.content()"></div>
 </body>
