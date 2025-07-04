@@ -1,0 +1,14 @@
+---
+.title = "SOS 2025",
+.date = @date("2025-08-02T09:00:00"),
+.author = "Pablo Hugen",
+.layout = "edition.shtml",
+.custom = {
+  "locale": "pt-BR",
+  "timezone": "America/Sao_Paulo",
+  "longitude": "-24.951917",
+  "latitude": "-53.478222"
+}
+---
+
+TODO
