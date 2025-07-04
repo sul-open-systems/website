@@ -1,12 +1,12 @@
 <extend template="base.shtml">
 <head id="head">
-  <meta name="description" content="Zig Days are single-day collaborative programming events">
+  <meta name="description" content="SOS meetup">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:description" content="Zig Days are single-day collaborative programming events">
-  <meta name="twitter:title" content="$page.title.prefix('Zig Day ')">
+  <meta name="twitter:description" content="SOS meetup">
+  <meta name="twitter:title" content="$page.title.prefix('SOS ')">
   <meta name="twitter:image" content="$site.host_url.addPath($page.asset('banner.png').link())">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="$page.title.prefix('Zig Day ')">
+  <meta property="og:title" content="$page.title.prefix('SOS ')">
   <meta property="og:image" content="$site.host_url.addPath($page.asset('banner.png').link())">
   <style>
     #event {
@@ -178,10 +178,6 @@
   <img id="banner" src="$page.asset('banner.png').link()">
   <div>
     <h2>Evento</h2>
-    TODO
-  </div>
-  <div id="about">
-    <h2 id="title">Programação</h2>
     <div id="content" :html="$page.content()" lang="$page.custom.get('locale')"></div>
   </div>
   <div>
