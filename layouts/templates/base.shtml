@@ -3,13 +3,29 @@
   <head id="head">
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1">
-    <title>SOS</title>
+    <title>[S]ul [O]pen [S]ystem</title>
     <link type="text/css" rel="stylesheet" href="$site.asset('style.css').link()">
     <link type="text/css" rel="stylesheet" href="$site.asset('highlight.css').link()">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <!-- HTML Meta Tags -->
+    <meta name="description" content="A Sul Open Systems é um evento de tecnologia que promove o conhecimento, a colaboração e a troca de experiências entre profissionais da área de tecnologia, com foco em software livre, de código aberto e minimalista.">
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="$site.host_url">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sul Open System">
+    <meta property="og:description" content="A Sul Open Systems é um evento de tecnologia que promove o conhecimento, a colaboração e a troca de experiências entre profissionais da área de tecnologia, com foco em software livre, de código aberto e minimalista.">
+    <meta property="og:image" content="$site.host_url.addPath($site.asset('images/og-banner.webp').link())">
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="sul-open-sys.org">
+    <meta property="twitter:url" content="$site.host_url">
+    <meta name="twitter:title" content="Sul Open System">
+    <meta name="twitter:description" content="A Sul Open Systems é um evento de tecnologia que promove o conhecimento, a colaboração e a troca de experiências entre profissionais da área de tecnologia, com foco em software livre, de código aberto e minimalista.">
+    <meta name="twitter:image" content="$site.host_url.addPath($site.asset('images/og-banner.webp').link())">
+    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
     <super>
   </head>
   <body id="body">
