@@ -1,5 +1,5 @@
 ---
-.title = "Homepage",
+.title = "SOS",
 .date = @date("2025-07-03T00:00:00"),
 .author = "Pablo Hugen",
 .layout = "index.shtml",
