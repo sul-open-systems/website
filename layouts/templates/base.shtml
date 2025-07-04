@@ -17,7 +17,7 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Sul Open System">
     <meta property="og:description" content="A Sul Open Systems é um evento de tecnologia que promove o conhecimento, a colaboração e a troca de experiências entre profissionais da área de tecnologia, com foco em software livre, de código aberto e minimalista.">
-    <meta property="og:image" content="$site.host_url.addPath($site.asset('images/og-banner.webp').link())">
+    <meta property="og:image" content="$site.host_url.addPath($site.asset('images/og-banner-large.png').link())">
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta property="twitter:domain" content="sul-open-sys.org">
