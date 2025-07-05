@@ -16,9 +16,12 @@ Site {
         "web-app-manifest-192x192.png",
         "web-app-manifest-512x512.png",
         "apple-touch-icon.png",
-        "favicon-96x96.png",
+        "favicon-16x16.png",
+        "favicon-32x32.png",
         "favicon.ico",
         "favicon.svg",
+        "android-chrome-192x192.png",
+        "android-chrome-512x512.png",
         "site.webmanifest",
     ],
 }

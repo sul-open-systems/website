@@ -154,7 +154,6 @@
     @view-transition {
       navigation: auto;
     }
-
   </style>
   <link rel="stylesheet" href="$site.asset('leaflet.css').link()">
   <script src="$site.asset('leaflet.js').link()"></script>
@@ -165,7 +164,6 @@
       }
     </style>
   </noscript>
-
 </head>
 <body id="body">
   <hgroup>
@@ -177,29 +175,29 @@
   </hgroup>
   <img id="banner" src="$page.asset('banner.png').link()">
   <div>
-    <h2>Evento</h2>
-    <div id="content" :html="$page.content()" lang="$page.custom.get('locale')"></div>
+    <h2>O Evento</h2>
+    <div class="local">
+      <div id="map"></div>
+      <div class="local-desc">
+        <div>
+          Local:
+          <a
+            class="address"
+            :text="$page.custom.get('address')"
+            data-latitude="$page.custom.get('latitude')"
+            data-longitude="$page.custom.get('longitude')"
+            data-gmaps="$page.custom.get('gmaps')"
+          ></a>
+        </div>
+        <div>
+          Dia/Horário:
+          <a :text="$page.custom.get('when')"></a>
+        </div>
+      </div>
+    </div>
   </div>
   <div>
-    <h2>Localização</h2>
-    <div class="local">
-        <div id="map"></div>
-            <div class="local-desc">
-            <div>
-                Local:
-                <a class="address"
-                  :text="$page.custom.get('address')"
-                  data-latitude="$page.custom.get('latitude')"
-                  data-longitude="$page.custom.get('longitude')"
-                  data-gmaps="$page.custom.get('gmaps')"
-                ></a>
-            </div>
-            <div>
-                Dia:
-                <a :text="$page.custom.get('when')"></a>
-            </div>
-        </div>
-    </div>
+    <div id="content" :html="$page.content()" lang="$page.custom.get('locale')"></div>
   </div>
   <script>
     const address = document.querySelectorAll('.address');
@@ -214,7 +212,7 @@
         ).addTo(map);
 
         var ZeroIcon = L.icon({
-        iconUrl: "/images/map-marker.svg",
+        iconUrl: "map-marker.svg",
         iconSize: [46, 46],
       });
     map.attributionControl.setPrefix(false);
