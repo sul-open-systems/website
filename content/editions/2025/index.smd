@@ -15,48 +15,58 @@
 }
 ---
 
-The Italian Zig community is growing and we are happy to host the first ever Zig Day!
+O *SOS 2025* é um evento livre e gratuito, **então a inscrição não será obrigatória** (porém bem vinda).
+Caso queira se inscrever, preencha o [formulário de inscrição](https://forms.gle/ZEZwVNMqic4QytBf8).
 
-Primary goal of the Zig Day Milano is to meet other people interested in Zig and build something together.
-This means working in pair or groups to write some code and share it at the end of the day.
+Caso você for apresentar uma talk, pedimos que considere ainda mais se inscrever, e que coloque pelo menos
+o nome da talk e o tempo estimado de duração no formulário. Assim podemos ter uma ideia de número de talks, 
+temas e tempo de duração para planejamento.
 
-Learning is the key: feel free to experiment on your own, asking around when in doubt; or sit down with someone else and contribute to an existing Zig project.
+### Programação e o que esperar
 
-There are no constraints for what to do during the Zig Day, the only rule is to note at least one thing that was learnt during the day, so it can be shared with other attendees at the end of the day.
+**09:30 ~ 10:00:** Agrupamento, boas vindas e organização \
+**10:00 ~ 12:00:** Apresentação de talks e discussões\
+**12:00 - 14:00:** Almoço\
+**14:00 - 16:00:** Possível apresentações restantes e bate papo\
+**16:00 - 16:30:** Encerramento
 
-We build software with the same love we cook food!
+A ideia principal do SOS 2025 é reunir a comunidade [hacker](https://en.wikipedia.org/wiki/Hacker_culture)
+para um encontro livre, divertido e descontraído, onde o foco é a troca de conhecimento e experiências.
 
-### What to expect
+Nessa edição, terá a **apresentação de talks**. Aqui, não será obrigatório apresentações elaboradas, ou que tenham
+um grande impacto. Então não fique tímido se você quer falar sobre algo interessante que não seja _um patch que
+você submeteu no kernel linux que diminuiu a latência de alocação no subsistema de gerenciamento de memória em 4x_
+ou algo assim. Alguns exemplos (lista não exaustiva) de temas para talks:
 
-We want to have a Zig Day with monthly cadence, usually around the second weekend of the month.
-It is not certain we will do it, due to the difficulty of finding venues that host on Saturday.
+- Algo novo que você aprendeu/fez
+- Se você é absolutamente iniciante e quer falar sobre como está sendo sua jornada
+- Projeto acadêmico ou de pesquisa que você está trabalhando
+- Projeto Open Source que você está contribuindo
+- Algo que você fez no seu trabalho (por favor não transforme a talk em um pitch empreendedor)
+- [firmware que você escreveu para o seu teclado](https://matt3o.com/building-a-keyboard-firmware/)
+- Setup do seu [homelab](https://www.reddit.com/r/homelab/comments/1f9o9z4/what_exactly_is_a_home_lab/?show=original)
+- [firmware customizado do seu roteador](https://openwrt.org/)
+- [ricing](https://www.reddit.com/r/unixporn/comments/3iy3wd/stupid_question_what_is_ricing/) que você fez no seu computador
 
-We don't have a stable venue to host all our events yet, so expect changes from month to month.
+Você **pode ou não preparar slides ou alguma demonstração**, mas não é necessário, apenas falar sobre esta experiência
+já é suficiente (porém o material de apoio deixa a talk mais interessante pra quem vê e fácil pra quem apresenta). 
+Como discutido nas nossas [inspirações](/about/), as talks vão ter um formato não hierarquico, i.e. vamos sentar todos na mesma mesa
+e apresentar as talks de forma horizontal, onde todos podem participar e discutir sobre o tema apresentado (_essa é uma chamada para você,
+pessoa tímida_).
 
-A typical Zig Day in Milan would run as follows (times are approximate):
+Depois disso, teremos um **momento para conversar e discutir**. Aqui você que não quis apresentar uma talk mas 
+tem algo de interessante para compartilhar pode falar, ou simplesmente conversar com outras pessoas sobre o que você está fazendo, 
+ou aprofundar/ser questionado sobre o que foi falado nas talks. A ideia é ser algo leve como um [stammtisch](https://www.kyuk.org/2024-12-22/i-discovered-one-way-to-fight-loneliness-the-germans-call-it-a-stammtisch).
 
-- 09:30 - 10:00: gathering and chit-chat
-- 10:00 - 10:30: explain projects, form groups, setup workstations
-- 10:30 - 12:30: build amazing stuff
-- 12:30 - 14:00: lunch break
-- 14:00 - 16:00: build amazing stuff (continued)
-- 16:00 - 17:00: show others what you built and what you learnt
+### Organizadores
 
+Pessoas que tornaram esse evento possível:
 
-### Stay tuned
+* [Pablo Hugen](https://github.com/Tomcat-42)
+* [Lucas Mulling](https://github.com/Mulling)
+* [Flávio Zanoni](https://github.com/FlavioZanoni)
+* [Daniel Boll](https://github.com/Daniel-Boll)
 
-Join the community in our channels to meet other ziglers in the Bel Paese:
+### Agradecimentos
 
-* Telegram channel [Zig Italia](https://t.me/ziglang_it)
-* [Zig User Group Italia](https://www.meetup.com/it-IT/italia-zig-user-group) on `meetup.com`
-
-### Contacts
-
-People making Zig Day Milano possible (in alphabetical order):
-
-* [Claudio Beatrice](https://github.com/omissis)
-* [Francesco Gualazzi](https://github.com/inge4pres)
-* [Ludovico Besana](https://github.com/ludovicobesana)
-* [Tommaso Previero](https://github.com/tpreviero)
-
-
+Agradecemos a [ACIC labs](https://www.aciclabs.com.br/) por ceder o espaço para o evento.
