@@ -3,7 +3,7 @@
   <head id="head">
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1">
-    <title>[S]ul [O]pen [S]ystem</title>
+    <title>SOS</title>
     <link type="text/css" rel="stylesheet" href="$site.asset('style.css').link()">
     <link type="text/css" rel="stylesheet" href="$site.asset('highlight.css').link()">
 
