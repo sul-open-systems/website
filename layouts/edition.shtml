@@ -212,8 +212,8 @@
         ).addTo(map);
 
         var ZeroIcon = L.icon({
-        iconUrl: "map-marker.svg",
-        iconSize: [46, 46],
+        iconUrl: "/images/map-marker.svg",
+        iconSize: [40, 40],
       });
     map.attributionControl.setPrefix(false);
     const marker = L.marker([longitude, latitude] ,{ icon: ZeroIcon }).addTo(map);
