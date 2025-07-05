@@ -73,10 +73,6 @@
       ></a>
     </div>
   </div>
-  <footer>
-    Dúvidas e/ou sugestões?
-    <a href="$site.page('contact').link()">Entre em contato</a>
-  </footer>
   <script>
     var map = L.map('map').setView([-25, -51], 6);
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -100,3 +96,8 @@
     }
   </script>
 </body>
+<footer id="footer">
+    Dúvidas e/ou sugestões?
+    <a href="$site.page('contact').link()">Entre em contato</a>
+</footer>
+

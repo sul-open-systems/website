@@ -39,4 +39,10 @@
     <h1 class="site-title" :text="$site.title"></h1>
     <super>
   </body>
+  <footer id="footer">
+    <super>
+    <div>
+        <p>🞄🞄🞄 ━ ━ ━ 🞄🞄🞄 🄯 2025</p>
+    </div>
+  </footer>
 </html>

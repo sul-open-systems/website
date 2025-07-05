@@ -9,3 +9,5 @@
     </h3>
     <div :html="$page.content()"></div>
 </body>
+<footer id="footer">
+</footer>
