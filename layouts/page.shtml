@@ -1,5 +1,12 @@
 <extend template="base.shtml">
 <head id="head">
+    <style>
+        img {
+          display: block;
+          margin: auto;
+          width: 60%;
+        }
+    </style>
 </head>
 <body id="body">
     <h3>
