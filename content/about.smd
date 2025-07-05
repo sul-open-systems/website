@@ -1,9 +1,23 @@
 ---
 .title = "O evento e suas inspirações",
-.date = @date("1990-01-01T00:00:00"),
+.date = @date("2025-07-03T00:00:00"),
 .author = "Pablo Hugen",
 .layout = "page.shtml",
 .draft = false,
 ---
 
-TODO
+
+O SOS é um evento criado para reunir a comunidade
+[hacker](https://en.wikipedia.org/wiki/Hacker_culture) do sul do Brasil, e
+promover um espaço para a discução e troca de conhecimento sobre os mais
+diversos temas relacionados ao software livre. A ideia de encontros assim
+surgiu em discussões dentro do **Laboratório de Sistemas Computacionais**
+na Universidade Estadual do Oeste do Paraná.
+
+[]($image.siteAsset('images/lab.png'))
+
+Sentimos que há um déficit de eventos no pais cujo foco seja realmente a troca
+de conhecimento, de forma que o evento não vire uma fachada para a promoção de
+uma determinada empresa ou produto. E, inspirados em outros eventos
+internacionais como: [Suckless confrence](https://suckless.org/conferences/2019) e
+[Software You Can Love](https://softwareyoucan.love/) criamos o **Sul Open Systems**.
