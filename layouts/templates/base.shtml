@@ -30,6 +30,9 @@
     <meta name="twitter:description" content="A Sul Open Systems é um evento de tecnologia que promove o conhecimento, a colaboração e a troca de experiências entre profissionais da área de tecnologia, com foco em software livre, de código aberto e minimalista.">
     <meta name="twitter:image" content="$site.host_url.addPath($site.asset('images/og-banner.webp').link())">
     <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+
+    <!-- Verify mastodon -->
+    <a style="visibility: hidden;" rel="me" href="https://mastodon.social/@sul_open_systems">Mastodon</a>
     <super>
   </head>
   <body id="body">
